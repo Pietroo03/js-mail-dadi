@@ -13,3 +13,23 @@ if (list.includes(request)) {
 } else {
     console.log('La tua mail non è registrata, ci dispiace');
 }
+
+
+
+
+/* Gioco dei dadi
+Generare un numero random da 1 a 6, sia per il giocatore sia per il computer. Stabilire il vincitore, in base a chi fa il punteggio più alto. */
+
+let player = Math.floor(Math.random() * 6) +1;
+console.log(player);
+
+let cpu = Math.floor(Math.random() * 6) +1;
+console.log(cpu);
+
+if (player > cpu) {
+    console.log('Hai vinto');
+} else if (cpu > player) {
+    console.log('Hai perso');
+} else {
+    console.log('Pareggio'); 
+}
